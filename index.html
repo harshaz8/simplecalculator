@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            background: #091921;
+        }
+        
+        .calculator {
+            position: center;
+            display: grid;
+            align-content: center;
+        }
+        
+        .calculator .number {
+            background: #091921;
+            grid-column: span4;
+            height: 50px;
+            text-align: right;
+            border: none;
+            outline: none;
+            width: 200px;
+            font-size: 20px;
+            color: #fff;
+        }
+        
+        .calculator .bt {
+            grid-template-columns: auto;
+            padding: 100px;
+            width: 75px;
+            height: 50px;
+            color: #fff;
+            background: #0c2835;
+            place-items: center;
+            font-size: 20px;
+            border: 1px solid rgba(0, 0, 0, .1);
+        }
+        
+        .bt:hover {
+            background: rgb(68, 115, 187);
+        }
+    </style>
+
+</head>
+<h1 style="text-align:center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Simple Calculator</h1>
+
+<body>
+    <div class="body">
+        <br>
+        <form class="calculator" method="POST" action="/">
+            <input class="number" type="number" name="num1" placeholder="First number">
+            <input class="number" type="number" name="num2" placeholder="Second number">
+            <input class="bt" type="submit" formaction="/" value="+">
+            <input class="bt" type="submit" formaction="/sub" value="-">
+            <input class="bt" type="submit" formaction="/mul" value="X">
+            <input class="bt" type="submit" formaction="/div" value="\">
+        </form>
+    </div>
+</body>
+<footer style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <p>Made with 💓 by
+        <a href="https://github.com/harshaz8" style="text-decoration: none;color: black;">Harshavardhan Bammidi</a></p>
+</footer>
+
+</html>
